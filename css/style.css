@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+
+    font-family: sans-serif;
+
+    width: 100%;
+
+    height: 100vh;
+
+    background-color: #404040;
+
+    display: flex;
+  
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+}
+
+header{
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #404040;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #404040;
+    gap: 10px;
+    border: #404040 10px solid;
+}
+
+div{
+    flex: 0 1 250px;
+}
+
+.container div{
+    display:flex;
+    flex-direction: column;
+    
+    border-radius: 10px;
+    max-height: 95px;
+    align-items: center;
+    justify-content:center;
+    row-gap: 10px;
+}
+
+.orcamento{
+   
+    background-color: #87CEEB;
+    width: 300px;
+    height: 95px;
+  
+}
+.orcamento span{
+    display: flex;
+    width: 300px;
+    height: 25px;  
+    border-radius: 10px;
+    align-items: center;
+    justify-content:center;
+    background-color: #4169E1;
+    /*background-color: #25D366;*/
+}
+
+.container .logo-jtchgnd{
+    width: 300px;
+    height: 95px;  
+    border-radius: 10px;
+}
+
+.container .logo-whats{
+    width: 300px;
+    height: 95px;
+    border-radius: 10px;
+   
+}
+
+
+.orcamento-formulario:hover {
+    background-color: #4169E1;
+    border-color: 2px #4169E1;
+    border-radius: 10px;
+    padding: 3px;
+    font-weight: bold;
+}
+
+.orcamento-zap:hover{
+    background-color: #4169E1;
+    border-color: 2px #4169E1;
+    border-radius: 10px;
+    padding: 3px;
+    font-weight: bold;
+}
+
+
+a{
+    color: black;
+
+    text-decoration: none;
+}
+
+.regioes-atendidas a:hover{
+
+    color: #4169E1;
+    
+    background-color: black;
+    
+    padding: 2px;
+    
+    border-radius: 2px;
+}
+
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.principal .cliqueAqui{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #4169E1;
+    border-radius: 10px;
+    border: 5px #4169E1;
+    margin-bottom: 10px;     
+   
+}
+
+
+ul.regioes-atendidas{
+
+    padding-left: 2px;
+
+    padding-top: 5px;
+
+    text-align: left;
+
+    background-color:  #FFFFFF;
+
+    border-radius: 10px;
+
+    max-height: 170px; /* Ajuste a altura máxima conforme necessário */
+
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical */
+
+    width: 300px;
+
+}
+
+figure figcaption.fig-hidden{
+    visibility: hidden;
+}
+
+
+/* Estiliza a barra de rolagem */
+ul.regioes-atendidas::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+    border-radius: 10px; /* Aplicação do border-radius na barra de rolagem */
+}
+
+ul.regioes-atendidas::-webkit-scrollbar-track {
+    background: #FFFFFF; /* Cor de fundo da trilha da barra de rolagem */
+    border-radius: 10px; /* Aplicação do border-radius na trilha da barra de rolagem */
+}
+
+ul.regioes-atendidas::-webkit-scrollbar-thumb {
+    background:  #FFFFFF; /* Cor da parte deslizante da barra de rolagem */
+    border-radius: 10px; /* Aplicação do border-radius na parte deslizante */
+}
+
+ul.regioes-atendidas::-webkit-scrollbar-thumb:hover {
+    background: #FFFFFF; /* Cor da parte deslizante da barra de rolagem quando em hover */
+}
+
+ 
+h1{
+
+    width: 300px;
+
+    background-color:  #FFFFFF;
+
+    border-radius: 10px;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    display: flex;
+
+    cursor: pointer;
+
+    overflow: hidden;
+     
+}
+
+.indicador{
+
+    height: 28px;
+
+    margin-left: 20px;
+
+    border-radius: 50%;
+
+}
+
+
+h2{
+
+    width: 300px;
+
+    background-color:  #FFFFFF;
+
+    border-radius: 10px;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    display: flex;  
+
+}
+
+.grato{
+    width: 300px;
+    height: 350px;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+.apagar{
+    display: none;
+}
+
+/* Estilos gerais */
+img {
+    max-width: 100%; /* Para garantir que a imagem não ultrapasse o limite do seu container */
+    height: auto;    /* Manter a proporção da imagem */
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajusta o tamanho do logo */
+    .logo-jtchgnd {
+        width: 80%; /* Ajuste o valor conforme necessário */
+    }
+    
+    /* Ajusta o tamanho do ícone do WhatsApp */
+    .logo-whats {
+        width: 60%; /* Ajuste o valor conforme necessário */
+    }
+
+    /* Ajusta o título principal */
+    .principal {
+        font-size: 18px;  /* Reduz o tamanho da fonte em telas menores */
+        text-align: center;  /* Alinha o texto ao centro para melhor leitura */
+    }
+    
+    /* Ajusta o título secundário */
+    .principal h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    /* Ajusta o layout do nav para melhor usabilidade */
+    nav {
+        flex-direction: column; /* Organiza os itens em uma coluna */
+        align-items: center;    /* Centraliza o conteúdo */
+    }
+
+    /* Ajuste da figura para garantir que as imagens se adaptem bem */
+    figure {
+        text-align: center; /* Centraliza as imagens */
+        margin: 10px 0; /* Dá um pouco de espaço entre as imagens */
+    }
+    
+    /* Ajusta o figcaption para textos menores em telas pequenas */
+    .fig-hidden {
+        font-size: 12px;
+    }
+}
