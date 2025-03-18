@@ -296,3 +296,42 @@ img {
         font-size: 12px;
     }
 }
+
+/* Estilo padrão */
+.redes-sociais figure {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px; /* Espaçamento entre figuras */
+}
+
+.redes-sociais img {
+    margin-right: 10px;
+    width: 24px; /* Tamanho maior para dispositivos maiores */
+    height: auto;
+}
+
+.redes-sociais figcaption {
+    font-size: 16px;
+    color: black;
+}
+
+/* Estilo para telas menores (dispositivos móveis) */
+@media (max-width: 600px) {
+    .redes-sociais figure {
+        flex-direction: column; /* Coloca a imagem acima do texto */
+        align-items: center;
+    }
+
+    .redes-sociais img {
+        margin-right: 0; /* Remove o espaçamento lateral */
+        margin-bottom: 5px; /* Espaçamento entre imagem e texto */
+        width: 20px; /* Tamanho menor para telas pequenas */
+    }
+
+    .redes-sociais figcaption {
+        font-size: 14px; /* Texto um pouco menor para dispositivos móveis */
+        text-align: center; /* Centraliza o texto */
+    }
+}
+
