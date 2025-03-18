@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Allow: /
+
+Sitemap: https://alexandre-ademar-arruda.github.io/fretes-carretos-mudancas/sitemap.xml
