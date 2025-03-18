@@ -335,3 +335,7 @@ img {
     }
 }
 
+header section.redes-sociais{
+    display: flex;
+    justify-content: space-around;
+}
