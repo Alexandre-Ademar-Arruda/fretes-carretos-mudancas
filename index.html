@@ -82,49 +82,53 @@
     
 </head>
 <body>
-    <header>
-        <nav class="container">          
-            
-            <a href="https://api.whatsapp.com/send?phone=5511995424085&text=ola!%0AAgilize%20seu%20or%C3%A7amento,%20por%20gentileza,%20me%20envie:%0AEndere%C3%A7os%0A-Origem%0A-Destino%0ALista%20da%20coisas%20pra%20eu%20ver%20quantos%20ajudantes%20e%20qual%20caminh%C3%A3o%20precisa.%0AAguardo%20seu%20retorno%20muito%20obrigado%0A%0A">
+    <section class="box">
+        <form action="processa.php" method="post">
+            <a href="https://api.whatsapp.com/send?phone=5511995424085&text=Se%20precisar%20de%20mais%20alguma%20informa%C3%A7%C3%A3o%20conte%20comigo.">
                 <figure>
                     <img src="./images/jatochegando_ia_resized_v2.jpg" alt="Logo da Transportadora Já Tô Chegando - Fretes e Mudanças Rápidas" class="logo-jtchgnd">
-                    <figcaption class="fig-hidden" >Fretes e Carretos</figcaption>
                 </figure>
             </a>
-
-            <h1 class="principal">
-                <strong>Fretes e Carretos</strong>
-            </h1>
-
-            <a href="https://wa.me/5511995424085?text=Olá! Gostaria de um orçamento para minha mudança.">
-                <figure>
-                    <img src="./images/orcamento_whats.jpg" alt="Solicitar orçamento pelo WhatsApp" class="logo-whats">
-                    <figcaption class="fig-hidden" >Carretos e Mudanças</figcaption>
-                </figure>
-            </a>
-            
-            <h2 class="principal">
-                <a href="">
-                    <strong>Carretos e Mudanças</strong>
-                </a>
-            </h2>        
-        </nav>
-            
+            <div class="input-box">
+                <h2><b>ORÇAMENTO</b></h2>
+                <h3><b>ITENS</b></h3>
+                <label><input type="checkbox" class="item-movel" name="itens[]" value="cama casal">Cama de Casal</label><br>
+                <label><input type="checkbox" class="item-movel" name="itens[]" value="Máquina de Lavar"> Máquina de Lavar</label><br>
+                <label><input type="checkbox" class="item-movel" name="itens[]" value="Sofá"> Sofá</label><br>
+                <label><input type="checkbox" class="item-movel" name="itens[]" value="Fogão"> Fogão</label><br>
+                <label><input type="checkbox" class="item-movel" name="itens[]" value="Geladeira"> Geladeira</label><br>
+                <Label><input type="checkbox" class="item-movel" name="itens[]" value="Rack"> Rack</Label><br>
+                <label><input type="checkbox" class="item-movel" name="itens[]" value="Penteadeira"> Penteadeira</label><br>
+                <label><input type="checkbox" class="item-movel" name="itens[]" value="Cama Solteiro">Cama Solteiro</label><br>
+                <label><input type="checkbox" class="item-movel" name="itens[]" value="TV"> TV</label><br>
+                <label><input type="checkbox" class="item-movel" name="itens[]" value="Guarda-roupa"> Guarda-roupa</label><br>
+                <label><input type="checkbox" class="item-movel" name="itens[]" value="Mesa com Cadeiras"> Mesa com Cadeiras</label><br>
+                <!-- Adicione mais aqui se quiser -->
+                <h2><b>Dados pessoais</b></h2>
+                <input type="text" name="nome" id="nome" required placeholder="Digite seu nome aqui">
+                <input type="text" name="origem" id="origem" required placeholder="Endereço origem aqui">
+                <input type="text" name="destino" id="destino" required placeholder="Endereço destino aqui">            
+                <button class="zap"  type="button" onclick="enviar_no_zap()" ><i class="fab fa-whatsapp"></i> Orçamento no WhatsApp</button>
+                <button class="E-mail" type="submit"><i class="fas fa-envelope"></i> Orçamento no E-mail</button>
+            </div>
+            <h2><b>Siga-nos nas Redes</b></h2>
             <section class="redes-sociais">
                 <a href="https://www.facebook.com/share/163ndAoFd6/" target="_blank" rel="noopener">
                     <figure>
-                        <img src="./images/facebook-2.png" alt="imagem do Facebook">
+                        <img src="./images/facebook.jpeg" alt="imagem do Facebook">
                         <figcaption>Facebook</figcaption>
                     </figure>
                 </a>
                 <a href="https://www.instagram.com/ja_to_chegando_transportadora?igsh=c2Fxc205ODc4MjBk" target="_blank" class="social-icon">
                     <figure>
-                        <img src="./images/instagram-logo.png" alt="Instagram">
+                        <img src="./images/instagram-logo.jpg" alt="Instagram">
                         <figcaption>Instagram</figcaption>
                     </figure>
                 </a>
             </section>
-    </header>
-    
+       
+        </form>
+    </section>
+    <script src="zap.js"></script>
 </body>
 </html>
