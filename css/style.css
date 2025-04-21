@@ -101,7 +101,7 @@ button.zap{
 button:hover.zap{
     font-size: 14px;
     letter-spacing: 1px;
-    border: 2px solid greenyellow;
+    border: 2px solid rgba(123, 196, 14, 0.24);
     cursor: pointer;
 }
 
