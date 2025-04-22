@@ -17,8 +17,8 @@ section.redes-sociais{
 
 .redes-sociais img {
     margin-top: 0;
-    width: 60px; /* Ajusta o tamanho das imagens para caberem em telas menores */
-    height: 60px;
+    width: 40px; /* Ajusta o tamanho das imagens para caberem em telas menores */
+    height: 40px;
 }
 
 .redes-sociais figcaption {
