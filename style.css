@@ -1,10 +1,21 @@
+section .redes-sociais{
+   max-width: 230px;
+    justify-content: center;
+    
+}
+
+.redes-sociais h2 {
+    white-space: nowrap;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    flex: 1;
+}
 .redes-sociais {
     display: flex;
-    flex-direction: row ; /* Empilha os itens verticalmente para dispositivos móveis */
     align-items: center;
-    gap: 20px; /* Espaço entre os links */
-    padding: 10px;
-
+    justify-content: space-between;
+    gap: 10px; /* Espaço entre os links */
 }
 
 .redes-sociais a {
@@ -13,8 +24,8 @@
 
 .redes-sociais img {
     margin-top: 0;
-    width: 80px; /* Ajusta o tamanho das imagens para caberem em telas menores */
-    height: 80px;
+    width: 30px; /* Ajusta o tamanho das imagens para caberem em telas menores */
+    height: 30px;
 }
 
 .redes-sociais figcaption {
@@ -40,6 +51,7 @@ h2,h3
     background-color: var(--cinza-3) ;
     color: var(--cinza-9);
 }
+
 h2 {
     display: block;
     flex-direction: column;
